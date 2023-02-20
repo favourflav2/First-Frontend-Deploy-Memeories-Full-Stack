@@ -1,13 +1,82 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+    margin: 0;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+  .header-text{
+    color: #606080;
+    font-weight: 500;
+    margin-top: 7px;
+    font-size: 17px;
+  }
+
+  .favour{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .top-left{
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    color: #c2a2a2;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  .tag-card{
+    margin: 10px 0 0 20px;
+    color: #806a78;
+  }
+  .tourName{
+    color: #f48f81;
+    font-size: 18px;
+    margin: 0 0 0 4px;
+    font-weight: 500;
+  }
+  .spinER{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .errorPage{
+    display: flex;
+    margin-top: 200px;
+    justify-content: center;
+
+  }
+  .errorPage > img{
+    border-radius: 50%;
+  }
+
+  h4{
+    overflow: hidden;
+    text-align: center;
+  }
+
+  h4::before,h4::after{
+    background-color: #000;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+  }
+
+  h4::before{
+    right: 0.5rem;
+    margin-left: -50%;
+  }
+
+  h4::after{
+    left: 0.5rem;
+    margin-right: -50%;
+  }
