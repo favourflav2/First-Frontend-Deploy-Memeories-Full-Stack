@@ -7,7 +7,7 @@ const devEnv = process.env.NODE_ENV !== "production"
 
 const {REACT_APP_LOCALHOST_API,REACT_APP_PROD_API} = process.env
 
-const API = axios.create({baseURL:`${devEnv ? REACT_APP_LOCALHOST_API : REACT_APP_PROD_API}`})
+const API = axios.create({baseURL:"https://first-backend-deploy-memeories-full-stack.onrender.com"})
 
 API.interceptors.request.use((req) => {
     if(localStorage.getItem('profile')){
