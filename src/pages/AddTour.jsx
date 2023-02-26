@@ -9,7 +9,7 @@ import {useNavigate, useParams} from 'react-router-dom'
 
 export default function AddTour() {
     const dispatch = useDispatch()
-    const {error,userTours} = useSelector(state => state.tour)
+    const {error,userTours,loading} = useSelector(state => state.tour)
     const {user} = useSelector(state => state.auth)
     const navigate = useNavigate()
     const {id} = useParams()
@@ -182,7 +182,7 @@ export default function AddTour() {
             </div>
 
             <div className="col-12">
-                <MDBBtn style={{width: "100%"}} className="mt-2">{id ? "Update" : "Submit"}</MDBBtn>
+                <MDBBtn style={{width: "100%"}} disabled={loading} className="mt-2">{id ? "Update" : "Submit"}</MDBBtn>
                 <MDBBtn style={{width: "100%"}} className="mt-2" color="danger" onClick={handleClear}>Clear</MDBBtn>
             </div>
 

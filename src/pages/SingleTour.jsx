@@ -5,7 +5,7 @@ import { useNavigate, useParams } from 'react-router-dom'
 import { getOneTour, getRelatedTours } from '../redux/features/tourSlice'
 import moment from 'moment'
 import RelatedTour from '../components/RelatedTour'
-import DisqusThread from '../components/DisqusThread'
+
 
 export default function SingleTour() {
     const dispatch = useDispatch()
@@ -85,7 +85,7 @@ export default function SingleTour() {
             {/* Related Tours */}
             <RelatedTour relatedTours={relatedTours} tourId={id}/>
         </MDBCard>
-        <DisqusThread id={id} title={tour?.title} path={`/tour/${id}`} />
+        
     </MDBContainer>
     </>
   )

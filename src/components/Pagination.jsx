@@ -1,7 +1,7 @@
 import { MDBBtn, MDBPagination, MDBPaginationItem } from 'mdb-react-ui-kit'
 import React from 'react'
 
-export default function Pagination({setCurrentPage,currentPage,numberOfPages,dispatch}) {
+export default function Pagination({ currentPage,setCurrentPage,numberOfPages,dispatch}) {
 
     function renderPagination(){
         if(currentPage === numberOfPages && currentPage === 1) return null

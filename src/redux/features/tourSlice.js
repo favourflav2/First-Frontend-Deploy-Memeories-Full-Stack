@@ -115,12 +115,13 @@ const tourSlice = createSlice({
         error: '',
         loading: false
     },
+    //Modify the state
     reducers:{
         setCurrentPage: (state, action) =>{
             state.currentPage = action.payload
         }
     },
-    
+    // Set State
     extraReducers:{
         [createTour.pending]: (state, action)=>{
             state.loading = true

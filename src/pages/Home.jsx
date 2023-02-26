@@ -26,6 +26,8 @@ export default function Home() {
     dispatch(getAllTours(currentPage));
   }, [dispatch, currentPage]);
 
+  
+
   if (loading) {
     return <Spinner />;
   }
